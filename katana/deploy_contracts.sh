@@ -55,9 +55,9 @@ curl -X POST http://localhost:3000/pricing_data \
   -d '{
     "identifiers": ["PITCH_LAKE_V1"],
     "params": {
-      "twap": ['$((DEPLOYMENT_DATE_INT - 86400))', '$DEPLOYMENT_DATE_INT'],
-      "volatility": ['$((DEPLOYMENT_DATE_INT - 259200))', '$DEPLOYMENT_DATE_INT'],
-      "reserve_price": ['$((DEPLOYMENT_DATE_INT - 259200))', '$DEPLOYMENT_DATE_INT']
+      "twap": ['$((DEPLOYMENT_DATE_INT - 720))', '$DEPLOYMENT_DATE_INT'],
+      "volatility": ['$((DEPLOYMENT_DATE_INT - 2160))', '$DEPLOYMENT_DATE_INT'],
+      "reserve_price": ['$((DEPLOYMENT_DATE_INT - 2160))', '$DEPLOYMENT_DATE_INT']
     },
     "client_info": {
       "client_address": "'$FOSSILCLIENT_ADDRESS'",
